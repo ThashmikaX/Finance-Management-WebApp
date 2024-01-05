@@ -1,16 +1,12 @@
 import React from 'react'
-import Navbar from './Components/Navbar/Navbar'
-import home from './Components/Home/home'
+import { Navbar, Hero } from './Components'
+import './App.css'
 
 const App = () => {
   return (
     <div className="container">
-      <div className="navbar">
-        <Navbar />
-      </div>
-      <div className="content">
-        <home />
-      </div>
+        <Navbar/>
+        <Hero/>
     </div>
   )
 }
