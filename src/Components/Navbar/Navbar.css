@@ -16,7 +16,7 @@ body {
   left: 0;
   width: 100%;
   padding: 15px 200px;
-  background: #4a98f7;
+  background: #000000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .nav,
@@ -70,7 +70,7 @@ a {
   left: 15px;
   top: 50%;
   left: 15px;
-  color: #4a98f7;
+  color: #000000;
   transform: translateY(-50%);
 }
 .search-box input {

@@ -1,11 +1,16 @@
 import React from 'react'
 import Navbar from './Components/Navbar/Navbar'
+import home from './Components/Home/home'
 
 const App = () => {
   return (
     <div className="container">
-      <Navbar />
-      
+      <div className="navbar">
+        <Navbar />
+      </div>
+      <div className="content">
+        <home />
+      </div>
     </div>
   )
 }
