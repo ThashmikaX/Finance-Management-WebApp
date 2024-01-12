@@ -1,13 +1,23 @@
 import React from 'react'
-import { Navbar, Hero } from './Components'
+import { Navbar } from './Components'
+import { Hero, Core } from './Pages'
 import './App.css'
+import { BrowserRouter as Router,Route,Routes } from 'react-router-dom'
 
 const App = () => {
   return (
-    <div className="container">
-        <Navbar/>
-        <Hero/>
-    </div>
+      <Router>
+        <div className='container1'>
+        <Navbar />
+        <Routes>
+
+          <Route path='/' element={<Hero />} />
+          <Route path='/core' element={<Core />} />
+
+        </Routes>
+        </div>
+      </Router>
+    
   )
 }
 
