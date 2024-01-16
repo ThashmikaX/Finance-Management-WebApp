@@ -1,0 +1,11 @@
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 999; /* Set a high z-index to ensure it appears on top of other elements */
+  }
+  
