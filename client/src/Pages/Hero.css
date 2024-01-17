@@ -12,7 +12,22 @@
     padding: 0px;
     font-weight: 900;
     text-align: center;
+
+    
 }
+
+.green-gradient{
+    background: linear-gradient(45deg, #2C9C59, #7CD8A1, rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.silver-gradient{
+    background: linear-gradient(45deg, #CDCDCD, #FFFFFF, #CDCDCD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 .Hero{
     background-color: rgb(0, 0, 0);
@@ -36,6 +51,7 @@
         padding: 10px 40px;
         font-size: 20px;
         cursor: pointer;
+        transition: all 1s ease-in-out;
     }
 
     .logo{
@@ -44,6 +60,11 @@
         min-width: 300px;
     }
     
+}
+
+.goButton:hover{
+    background: linear-gradient(45deg, #2C9C59, #7CD8A1, white);
+    color: rgb(0, 0, 0);
 }
 
 .bgImages{
@@ -76,7 +97,6 @@
     }
     .Hero{
         flex-direction: column;
-        height: 100%;
         gap: 0px;
         width: 100vw;
 
@@ -98,6 +118,14 @@
     .bgImages{
         width: 100%;
         height: auto;
+    }
+
+    .title{
+        font-size: 50px;
+        margin: 100px 0px 0px 0px;
+        padding: 0px;
+        font-weight: 900;
+        text-align: center;
     }
 
 

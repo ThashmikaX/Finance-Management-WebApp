@@ -22,11 +22,12 @@ const Navbar = () => {
   return (
     <nav className={`nav ${isSearchOpen ? 'openSearch' : ''} ${isNavOpen ? 'openNav' : ''}`}>
       <i className="uil uil-bars navOpenBtn" onClick={handleNavOpenClick}></i>
-      <a href="#" className="logo">Finance Tracker</a>
+      <a href="/#" className="logo">Finance Tracker</a>
 
       <ul className="nav-links">
         <i className="uil uil-times navCloseBtn" onClick={handleNavCloseClick}></i>
-        <li><a href="#">Home</a></li>
+        <li><a href="/#">Home</a></li>
+        <li><a href="/core">Dashboard</a></li>
         <li><a href="#">Our Trusters</a></li>
         <li><a href="#">About Us</a></li>
       </ul>

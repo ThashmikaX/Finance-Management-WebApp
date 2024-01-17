@@ -10,9 +10,9 @@ const Hero = () => {
   return (
     <React.StrictMode>
     <div className='full'>
-      <h1 className='title'>Manage Your Finace</h1>
+      <h1 className='title silver-gradient'>Manage Your <span className='green-gradient'>Finace</span></h1>
       <div className='Hero'>
-        <p className='description'>Lorem ipsum dolor sit amet consectetur. Congue vulputate mauris ut turpis tortor. Est sed posuere facilisi ullamcorper sit risus neque tortor vestibulum. Vel magna orci in nisl. Malesuada nisl placerat tincidunt arcu. Tortor risus quisque proin amet integer. Eu id eget dictumst purus arcu. Senectus neque </p>
+        <p className='description silver-gradient'>Lorem ipsum dolor sit amet consectetur. Congue vulputate mauris ut turpis tortor. Est sed posuere facilisi ullamcorper sit risus neque tortor vestibulum. Vel magna orci in nisl. Malesuada nisl placerat tincidunt arcu. Tortor risus quisque proin amet integer. Eu id eget dictumst purus arcu. Senectus neque </p>
         <img  src={card} alt="SLSAC" className='logo'/>
         {/* <button className='goButton'>Click Me</button> */}
         <Button variant="light" className='goButton' onClick={()=>Navigate('/core')}>Let's goo</Button>{' '}
