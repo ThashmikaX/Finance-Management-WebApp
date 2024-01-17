@@ -35,7 +35,7 @@ a {
   font-weight: 500;
 }
 .nav .nav-links {
-  column-gap: 20px;
+  column-gap: 40px;
   list-style: none;
 }
 .nav .nav-links a {
