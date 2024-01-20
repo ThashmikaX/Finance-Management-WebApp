@@ -1,13 +1,20 @@
 const mongoose = require('mongoose');
 const UserSchema = new mongoose.Schema({
-    name: {
+    Transaction: {
         type: String,
-        required: [true, 'Please enter a name']
+        required: [true, 'Please enter a Name']
     },
-    email: {
+    TransactionType: {
         type: String,
-        unique: true,
-        required: [true, 'Please enter an email']
+        required: [true, 'Please enter an Type']
+    },
+    Catagory: {
+        type: String,
+        required: [true, 'Please enter a Catagory']
+    },
+    Amount: {
+        type: Number,
+        required: [true, 'Please enter a Amount']
     },
 });
 
