@@ -17,7 +17,7 @@
 }
 
 .green-gradient{
-    background: linear-gradient(45deg, #2C9C59, #7CD8A1, rgb(255, 255, 255));
+    background: linear-gradient(160deg, #166034, #00FF66, rgb(255, 255, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -51,7 +51,7 @@
         padding: 10px 40px;
         font-size: 20px;
         cursor: pointer;
-        transition: all 1s ease-in-out;
+        transition: 0.5s
     }
 
     .logo{
@@ -63,7 +63,7 @@
 }
 
 .goButton:hover{
-    background: linear-gradient(45deg, #2C9C59, #7CD8A1, white);
+    background: linear-gradient(160deg, #166034, #00FF66, rgb(255, 255, 255));
     color: rgb(0, 0, 0);
 }
 

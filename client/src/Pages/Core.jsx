@@ -2,8 +2,9 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Axios from "axios";
 import "./Core.css";
+import Card from "../Components/card";
 
-const Core = () => {
+function Core() {
   const [transaction, setTransaction] = useState("");
   const [transactionType, setTransactionType] = useState("");
   const [category, setCategory] = useState("");
@@ -28,11 +29,11 @@ const Core = () => {
 
   const handleSubmit = () => {
     Axios.post("http://localhost:3001/createUser", {
-        Transaction: transaction,
-        TransactionType: transactionType,
-        Category: category,
-        Amount: amount,
-      })
+      Transaction: transaction,
+      TransactionType: transactionType,
+      Category: category,
+      Amount: amount,
+    })
       .then((response) => {
         alert("The user is successfully added");
       })
@@ -88,45 +89,57 @@ const Core = () => {
       )}
       <div className="div-grid">
         <div className="card card1">
-          <h1>Core 1</h1>
+          <Card className="greenGradient">
+            <h1>Card</h1>
+          </Card>
         </div>
         <div className="card three-child-card card2">
-          <div className="sub-card spending">
-            <h1>Spending</h1>
-          </div>
-          <div className="sub-card expenses">
-            <h1>Income</h1>
-          </div>
-          <div className="sub-card add-button">
-            <button onClick={toggleAddPopup}>Add Transaction</button>
-          </div>
+          <Card className="grayGradient">
+            <h1>Card</h1>
+          </Card>
+          <Card className="grayGradient">
+            <h1>Card</h1>
+          </Card>
+          <button onClick={toggleAddPopup} className="add-button">
+            Add Transaction
+          </button>
         </div>
         <div className="card card3">
-          <h1>Core 3</h1>
+          <Card className="grayGradient">
+            <h1>Card</h1>
+          </Card>
         </div>
-        <div className="card card4">
-          <h1>Expense List</h1>
-          {expenses.map((expense, index) => (
-            <div key={index}>
-              <p>{expense.Transaction}</p>
-              <p>{expense.TransactionType}</p>
-              <p>{expense.Catagory}</p>
-              <p>{expense.Amount}</p>
-            </div>
-          ))}
+        <div className="card card4 expense-list">
+          <Card className="grayGradient">
+            <h2>Expense List</h2>
+            {expenses.map((expense, index) => (
+              <div key={index}>
+                <p>{expense.Transaction}</p>
+                <p>{expense.TransactionType}</p>
+                <p>{expense.Catagory}</p>
+                <p>{expense.Amount}</p>
+              </div>
+            ))}
+          </Card>
         </div>
         <div className="card card5">
-          <h2>Income List</h2>
+          <Card className="grayGradient">
+            <h1>Card</h1>
+          </Card>
         </div>
         <div className="card card6">
-          <h1>Core 6</h1>
+          <button onClick={toggleAddPopup} className="add-button">
+            View All Spending
+          </button>
         </div>
         <div className="card card7">
-          <h1>Core 7</h1>
+          <button onClick={toggleAddPopup} className="add-button">
+            View All Incomes
+          </button>
         </div>
       </div>
     </>
   );
-};
+}
 
 export default Core;

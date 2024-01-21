@@ -3,7 +3,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #fff;
+    background: #7f7f7f;
     padding: 2rem;
     border: 1px solid #ccc;
     z-index: 999; /* Set a high z-index to ensure it appears on top of other elements */
@@ -19,8 +19,6 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-
-
   }
   
 .grid-span-2{
@@ -32,9 +30,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
 }
 
 .sub-card{
@@ -51,8 +46,13 @@
     cursor: pointer;
 }
 
+.expense-list{
+    height: 100%;
+}
+
 
 .div-grid{
+    margin-bottom: 50px;
     background-color: black;
     display: grid;
     grid-template-columns: 100%;
@@ -70,60 +70,13 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    margin-inline: auto;
     .card{
-        background: rgba(183, 183, 183, 0.25);
-        backdrop-filter: blur( 4px );
-        -webkit-backdrop-filter: blur( 4px );
-        border-radius: 10px;
+        background-color: transparent;
         border: 1px solid rgba( 255, 255, 255, 0.18 );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 4px );
-        -webkit-backdrop-filter: blur( 4px );
-        color: white;
-        padding: 2rem;
-        z-index: 1;
-        overflow: hidden;
-        transition: 0.5s;
-        cursor: pointer;
+        color: rgb(255, 255, 255);
         width: 100%;
         height: 100%;
-        .cardTitle{
-            font-size: 30px;
-            font-weight: 600;
-            text-align: center;
-        }
-        .cardDescription{
-            font-size: 20px;
-            font-weight: 400;
-            text-align: center;
-        }
-        .cardImage{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-        }
-        .cardButton{
-            background-color: rgb(255, 255, 255);
-            border: none;
-            border-radius: 50px;
-            padding: 10px 40px;
-            font-size: 20px;
-            cursor: pointer;
-        }
-        .cardButton:hover{
-            background-color: rgb(255, 255, 255);
-            border: none;
-            border-radius: 50px;
-            padding: 10px 40px;
-            font-size: 20px;
-}
-    }
-}
+}}
 
 .card1{
     grid-area: card1;
@@ -177,5 +130,30 @@
     }
     .card7{
         grid-area: card7;
+    }
+}
+
+.add-button{
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+    background: linear-gradient(160deg, #166034 0%,  #00FF66 100%) padding-box,
+              linear-gradient(160deg, #a3a3a3 0%,  #636363 100%) border-box;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    padding: 10px 40px;
+    text-align: left;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.37);
+    &:hover{
+        background-color: rgba( 255, 255, 255, 0.18 );
+        color: black;
     }
 }
