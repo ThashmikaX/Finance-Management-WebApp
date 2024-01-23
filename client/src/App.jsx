@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navbar } from './Components'
-import { Hero, Core } from './Pages'
+import { Hero, Core, AboutUs } from './Pages'
 import './App.css'
 import { BrowserRouter as Router,Route,Routes } from 'react-router-dom'
 
@@ -13,6 +13,7 @@ const App = () => {
 
           <Route path='/' element={<Hero />} />
           <Route path='/core' element={<Core />} />
+          <Route path='aboutus' element={<AboutUs />} />
 
         </Routes>
         </div>

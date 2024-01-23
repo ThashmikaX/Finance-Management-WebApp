@@ -29,7 +29,7 @@ const Navbar = () => {
         <li><a href="/#">Home</a></li>
         <li><a href="/core">Dashboard</a></li>
         <li><a href="#">Our Trusters</a></li>
-        <li><a href="#">About Us</a></li>
+        <li><a href="/aboutus">About Us</a></li>
       </ul>
 
       <i className={`uil uil-search search-icon ${isSearchOpen ? 'openSearch' : ''}`} id="searchIcon" onClick={handleSearchClick}></i>
