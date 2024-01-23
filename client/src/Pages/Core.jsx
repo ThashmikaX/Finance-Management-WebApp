@@ -23,6 +23,32 @@ function Core() {
     (transaction1) => transaction1.TransactionType === "Expense"
   );
 
+  const expensesByCategory = transactions.reduce((acc, transaction) => {
+    if (transaction.TransactionType === "Expense") {
+      if (!acc[transaction.Catagory]) {
+        acc[transaction.Catagory] = 0;
+      }
+      acc[transaction.Catagory] += transaction.Amount;
+    }
+    return acc;
+  }, {});
+
+  const sumOfExpenses = transactions.reduce((acc, transaction) => {
+    if (transaction.TransactionType === "Expense") {
+      acc += transaction.Amount;
+    }
+    return acc;
+  }, 0);
+
+  const sumOfIncomes = transactions.reduce((acc, transaction) => {
+    if (transaction.TransactionType === "Income") {
+      acc += transaction.Amount;
+    }
+    return acc;
+  }, 0);
+
+  const total = sumOfIncomes - sumOfExpenses;
+
   const toggleAddPopup = () => {
     setAddPopupVisibility(!isAddPopupVisible);
   };
@@ -41,7 +67,11 @@ function Core() {
       Amount: amount,
     })
       .then((response) => {
-        alert("The user is successfully added");
+        // After the transaction is added, re-fetch the transactions
+        Axios.get("http://localhost:3001/getUsers").then((response) => {
+          setTransactions(response.data);
+        });
+        setAddPopupVisibility(false);
       })
       .catch((error) => console.error(error));
   };
@@ -112,42 +142,56 @@ function Core() {
       )}
       <div className="div-grid">
         <div className="card card1">
-          <Card className="greenGradient">
-            <h1>Card</h1>
+          <Card className="greenGradient h-100 wallet-card">
+            <p style={{ fontSize: "60px", fontWeight: 600 }}>
+              <span style={{ fontWeight: 200 }}>Wallet</span> Rs.{" "}
+              {total.toLocaleString()}
+            </p>
           </Card>
         </div>
         <div className="card three-child-card card2">
           <Card className="grayGradient">
-            <h1>Card</h1>
+            <p style={{ fontSize: "20px" }}>Spendings</p>
+            <p style={{ fontSize: "35px", fontWeight: 800 }}>
+              Rs. {sumOfExpenses.toLocaleString()}
+            </p>
           </Card>
           <Card className="grayGradient">
-            <h1>Card</h1>
+            <p style={{ fontSize: "20px" }}>Incomes</p>
+            <p style={{ fontSize: "35px", fontWeight: 800 }}>
+              Rs. {sumOfIncomes.toLocaleString()}
+            </p>
           </Card>
           <button onClick={toggleAddPopup} className="add-button">
             Add Transaction
           </button>
         </div>
-        <div className="card card3">
-          <Card className="grayGradient">
-            <h1>Card</h1>
+        <div className="card card3 spending-by-catagory">
+          <Card className="grayGradient h-100">
+            <h1>Spending by Category</h1>
+            {Object.entries(expensesByCategory).map(([Catagory, amount]) => (
+              <div key={Catagory} className="expense-list-elem">
+                <p>{Catagory}</p>
+                <p className="amount">{amount.toLocaleString()}</p>
+              </div>
+            ))}
           </Card>
         </div>
         <div className="card card4 expense-list">
-          <Card className="grayGradient">
+          <Card className="grayGradient h-100">
             <h2>Expense List</h2>
             {expenses.map((expense, index) => (
-              <div key={index}>
+              <div key={index} className="expense-list-elem">
                 <p>{expense.Transaction}</p>
-                <p>{expense.TransactionType}</p>
                 <p>{expense.Catagory}</p>
-                <p>{expense.Amount}</p>
+                <p className="amount">{expense.Amount.toLocaleString()}</p>
               </div>
             ))}
           </Card>
         </div>
         <div className="card card5">
-          <Card className="grayGradient">
-            <h1>Card</h1>
+          <Card className="grayGradient h-100">
+            <h1>Daily tips</h1>
           </Card>
         </div>
         <div className="card card6">
