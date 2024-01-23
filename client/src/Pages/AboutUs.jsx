@@ -8,7 +8,7 @@ const AboutUs = () => {
         <p>Our names are: </p>
         <ul>
           <li>Shivam Patel</li>
-          <li>Shivam Patel</li>
+          <li>Shivam Patel bbbb</li>
           <li>Shivam Patel</li>
         </ul>
       
