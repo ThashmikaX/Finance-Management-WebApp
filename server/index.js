@@ -10,8 +10,6 @@ app.use(cors());
 
 mongoose.connect("mongodb+srv://thashmikax:4uJX8YX6mTGStgjU@cluster0.o2oihzs.mongodb.net/finance-tracker?retryWrites=true&w=majority",
   {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
   }).then(() => { console.log('Database connected..') }).catch((err) => console.log(err));
 
 
