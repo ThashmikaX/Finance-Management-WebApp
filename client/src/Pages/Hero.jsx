@@ -11,8 +11,9 @@ const Hero = () => {
   return (
     <React.StrictMode>
       <div className="full">
-        <h1 className="title silver-gradient">
-          Manage Your <span className="green-gradient">Finance</span>
+        <h1 className="title">
+          <span className="silver-gradient ">Manage Your</span>{" "}
+          <span className="green-gradient">Finance</span>
         </h1>
         <div className="Hero">
           <p className="description silver-gradient">
@@ -22,7 +23,7 @@ const Hero = () => {
             tincidunt arcu. Tortor risus quisque proin amet integer. Eu id eget
             dictumst purus arcu. Senectus neque{" "}
           </p>
-          <CreditCard/>
+          <CreditCard />
           {/* <img src={card} alt="SLSAC" className="logo" /> */}
           {/* <button className='goButton'>Click Me</button> */}
           <Button
