@@ -172,7 +172,7 @@ function Core() {
             {Object.entries(expensesByCategory).map(([Catagory, amount]) => (
               <div key={Catagory} className="expense-list-elem">
                 <p>{Catagory}</p>
-                <p className="amount">{amount.toLocaleString()}</p>
+                <p className="amount">Rs. {amount.toLocaleString()}</p>
               </div>
             ))}
           </Card>
@@ -184,7 +184,7 @@ function Core() {
               <div key={index} className="expense-list-elem">
                 <p>{expense.Transaction}</p>
                 <p>{expense.Catagory}</p>
-                <p className="amount">{expense.Amount.toLocaleString()}</p>
+                <p className="amount">Rs. {expense.Amount.toLocaleString()}</p>
               </div>
             ))}
           </Card>
