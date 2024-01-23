@@ -27,7 +27,6 @@
     -webkit-text-fill-color: transparent;
 }
 
-
 .Hero{
     background-color: rgb(0, 0, 0);
     display: flex;
@@ -36,7 +35,6 @@
     justify-content: center;
     gap: 50px;
     margin-top: -20vh;
-
     .description{
         font-size: 15px;
         color: rgb(255, 255, 255);
@@ -58,7 +56,6 @@
         height: auto;
         min-width: 300px;
     }
-    
 }
 
 .goButton:hover{
@@ -83,9 +80,6 @@
         rotate: 180deg;
     }
 }
-
-
-
 
 @media screen and (max-width: 768px){
     .full{
@@ -126,6 +120,4 @@
         font-weight: 900;
         text-align: center;
     }
-
-
 }
