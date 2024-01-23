@@ -6,8 +6,8 @@ import Card from "../Components/card";
 
 function Core() {
   const [transaction, setTransaction] = useState("");
-  const [transactionType, setTransactionType] = useState("");
-  const [category, setCategory] = useState("");
+  const [transactionType, setTransactionType] = useState("Expense");
+  const [category, setCategory] = useState("Food");
   const [amount, setAmount] = useState(0);
 
   const [isAddPopupVisible, setAddPopupVisibility] = useState(false);
@@ -27,11 +27,17 @@ function Core() {
     setAddPopupVisibility(!isAddPopupVisible);
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("handleSubmit called");
+    console.log("transaction " + transaction);
+    console.log("transactionType " + transactionType);
+    console.log("category " + category);
+    console.log("amount " + amount);
     Axios.post("http://localhost:3001/createUser", {
       Transaction: transaction,
       TransactionType: transactionType,
-      Category: category,
+      Catagory: category,
       Amount: amount,
     })
       .then((response) => {
@@ -44,18 +50,26 @@ function Core() {
     <>
       {isAddPopupVisible && (
         // In your form
-        <form className="popup">
+        <form className="popup" onSubmit={handleSubmit}>
           <label>
             <h2>Add Transaction</h2>
             Transaction:
             <input
               type="text"
-              onChange={(e) => setTransaction(e.target.value)}
+              onChange={(e) => {
+                setTransaction(e.target.value);
+              }}
             />
             <br />
             <br />
             Transaction Type:
-            <select onChange={(e) => setTransactionType(e.target.value)}>
+            <select
+              value={transactionType}
+              onChange={(e) => {
+                setTransactionType(e.target.value);
+                console.log(e.target.value);
+              }}
+            >
               <option value="Income">Income</option>
               <option value="Expense">Expense</option>
             </select>
@@ -63,7 +77,13 @@ function Core() {
           <br />
           <label>
             Catagory:
-            <select onChange={(e) => setCategory(e.target.value)}>
+            <select
+              value={category}
+              defaultValue="Food"
+              onChange={(e) => {
+                setCategory(e.target.value);
+              }}
+            >
               <option value="Food">Food</option>
               <option value="Living">Living</option>
               <option value="Entertainment">Entertainment</option>
@@ -79,12 +99,15 @@ function Core() {
           <br />
           <label>
             Amount:
-            <input type="number" onChange={(e) => setAmount(e.target.value)} />
+            <input
+              type="number"
+              onChange={(e) => {
+                setAmount(e.target.value);
+              }}
+            />
           </label>
           <br />
-          <button type="submit" onClick={handleSubmit}>
-            Submit
-          </button>
+          <button type="submit">Submit</button>
         </form>
       )}
       <div className="div-grid">
