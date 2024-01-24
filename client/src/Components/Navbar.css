@@ -7,9 +7,11 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   background: #f0faff;
 }
+
 .nav {
   top: 0;
   left: 0;
@@ -18,38 +20,52 @@ body {
   background: #000000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 .nav,
 .nav .nav-links {
   display: flex;
   align-items: center;
 }
+
 .nav {
   justify-content: space-between;
 }
+
 a {
   color: #ffffff;
   text-decoration: none;
 }
+
 .nav .logo {
   font-size: 22px;
   font-weight: 500;
 }
+
 .nav .nav-links {
   column-gap: 40px;
   list-style: none;
 }
+
 .nav .nav-links a {
   transition: all 0.2s linear;
 }
+
+.nav-links a:hover {
+  color: #00ff66;
+  
+}
+
 .nav.openSearch .nav-links a {
   opacity: 0;
   pointer-events: none;
 }
+
 .nav .search-icon {
   color: #fff;
   font-size: 20px;
   cursor: pointer;
 }
+
 .nav .search-box {
   position: absolute;
   right: 250px;
@@ -60,10 +76,12 @@ a {
   pointer-events: none;
   transition: all 0.2s linear;
 }
+
 .nav.openSearch .search-box {
   opacity: 1;
   pointer-events: auto;
 }
+
 .search-box .search-icon {
   position: absolute;
   left: 15px;
@@ -72,6 +90,7 @@ a {
   color: #000000;
   transform: translateY(-50%);
 }
+
 .search-box input {
   height: 100%;
   width: 100%;
@@ -92,27 +111,34 @@ a {
   .nav {
     padding: 15px 100px;
   }
+
   .nav .search-box {
     right: 150px;
   }
 }
+
 @media screen and (max-width: 950px) {
   .nav {
     padding: 15px 50px;
   }
+
   .nav .search-box {
     right: 100px;
     max-width: 400px;
   }
 }
+
 @media screen and (max-width: 768px) {
+
   .nav .navOpenBtn,
   .nav .navCloseBtn {
     display: block;
   }
+
   .nav {
     padding: 15px 20px;
   }
+
   .nav .nav-links {
     position: fixed;
     top: 0;
@@ -128,14 +154,17 @@ a {
     transition: all 0.4s ease;
     z-index: 100;
   }
+
   .nav.openNav .nav-links {
     left: 0;
   }
+
   .nav .navOpenBtn {
     color: #fff;
     font-size: 20px;
     cursor: pointer;
   }
+
   .nav .navCloseBtn {
     position: absolute;
     top: 20px;
@@ -144,6 +173,7 @@ a {
     font-size: 20px;
     cursor: pointer;
   }
+
   .nav .search-box {
     top: calc(100% + 10px);
     max-width: calc(100% - 20px);
@@ -151,6 +181,7 @@ a {
     transform: translateX(50%);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
+
   a {
     color: #000000;
     text-decoration: none;
