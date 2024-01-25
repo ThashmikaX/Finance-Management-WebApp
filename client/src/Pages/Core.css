@@ -6,7 +6,8 @@
   background: #7f7f7f;
   padding: 2rem;
   border: 1px solid #ccc;
-  z-index: 999; /* Set a high z-index to ensure it appears on top of other elements */
+  z-index: 999;
+  /* Set a high z-index to ensure it appears on top of other elements */
   width: 100%;
   max-width: 600px;
   height: 50%;
@@ -72,6 +73,7 @@
   flex-direction: column;
   overflow: auto;
 }
+
 .expense-list-elem {
   display: flex;
   justify-content: space-between;
@@ -84,15 +86,18 @@
   border: 1px solid transparent;
   padding: 10px 40px;
   text-align: left;
-  .amount{
-      color: #00ff66;
+
+  .amount {
+    color: #00ff66;
   }
+
   &:hover {
     background: linear-gradient(160deg, #166034 0%, #00ff66 100%) padding-box,
       linear-gradient(160deg, #a3a3a3 0%, #636363 100%) border-box;
     color: rgb(255, 255, 255);
-    .amount{
-        color: #ffffff;
+
+    .amount {
+      color: #ffffff;
     }
   }
 }
@@ -116,6 +121,7 @@
   align-items: center;
   width: 100%;
   height: 100%;
+
   .card {
     background-color: transparent;
     color: rgb(255, 255, 255);
@@ -126,21 +132,27 @@
 .card1 {
   grid-area: card1;
 }
+
 .card2 {
   grid-area: card2;
 }
+
 .card3 {
   grid-area: card3;
 }
+
 .card4 {
   grid-area: card4;
 }
+
 .card5 {
   grid-area: card5;
 }
+
 .card6 {
   grid-area: card6;
 }
+
 .card7 {
   grid-area: card7;
 }
@@ -155,24 +167,31 @@
       "card3 card3 card4 card4"
       "card5 card5 card6 card7";
   }
+
   .card1 {
     grid-area: card1;
   }
+
   .card2 {
     grid-area: card2;
   }
+
   .card3 {
     grid-area: card3;
   }
+
   .card4 {
     grid-area: card4;
   }
+
   .card5 {
     grid-area: card5;
   }
+
   .card6 {
     grid-area: card6;
   }
+
   .card7 {
     grid-area: card7;
   }
@@ -197,8 +216,13 @@
   padding: 10px 40px;
   text-align: left;
   box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.37);
+
   &:hover {
     background-color: rgba(255, 255, 255, 0.18);
     color: black;
   }
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
 }

@@ -1,0 +1,93 @@
+.dialog-form{
+    background: #ffffff;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin: auto;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 20px;
+}
+
+.button{
+    background: #ffffff;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.37);
+    color: #ffffff;
+}
+
+.submit{
+    background: linear-gradient(160deg, #166034 0%, #00FF66 100%) padding-box,
+            linear-gradient(160deg, #a3a3a3 0%, #636363 100%) border-box;
+        border-radius: 25px;
+        border: 1px solid transparent;
+        padding: 10px 40px;
+        text-align: left;
+        box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.37);
+}
+
+.cancel{
+    background: linear-gradient(160deg, #323232 0%, #1a1a1a 100%) padding-box,
+            linear-gradient(160deg, #a3a3a3 0%, #636363 100%) border-box;
+        border-radius: 25px;
+        border: 1px solid transparent;
+        padding: 10px 40px;
+        text-align: left;
+        box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.37);
+}
+
+.text-input{
+    background: #ffffff;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.37);
+}
+
+.text-input:focus{
+    outline: none;
+}
+
+.text-input::placeholder{
+    color: #a3a3a3;
+}
+
+.text-input:invalid{
+    border: 1px solid #ff0000;
+}
+
+
+
+.select-input{
+    background: #ffffff;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.37);
+}
+
+.select-input:focus{
+    outline: none;
+}
+
+.select-input::placeholder{
+    color: #a3a3a3;
+}
+
+.select-input:invalid{
+    border: 1px solid #ff0000;
+}
+
+
+
+
+/* Path: client/src/Components/PopupForm.js */
+
