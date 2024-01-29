@@ -10,8 +10,6 @@
   /* Set a high z-index to ensure it appears on top of other elements */
   width: 100%;
   max-width: 600px;
-  height: 50%;
-  max-height: 600px;
   overflow: auto;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -225,4 +223,12 @@
 
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.wallet-card{
+  justify-content: left;
+  align-items: left;
+  display: flex;
+  vertical-align: middle;
+  margin-top: auto;
 }

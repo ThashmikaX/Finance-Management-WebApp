@@ -84,20 +84,20 @@ function Core() {
       <div className="div-grid">
         <div className="card card1">
           <Card className="greenGradient h-100 wallet-card">
-            <p style={{ fontSize: "60px", fontWeight: 600 }}>
+            <p style={{ fontSize: "60px", fontWeight: 600 }} className="wallet-card">
               <span style={{ fontWeight: 200 }}>Wallet</span> Rs.{" "}
               {total.toLocaleString()}
             </p>
           </Card>
         </div>
-        <div className="card three-child-card card2">
-          <Card className="grayGradient">
+        <div className="card three-child-card card2 h-100">
+          <Card className="grayGradient h-100">
             <p style={{ fontSize: "20px" }}>Spendings</p>
             <p style={{ fontSize: "35px", fontWeight: 800 }}>
               Rs. {sumOfExpenses.toLocaleString()}
             </p>
           </Card>
-          <Card className="grayGradient">
+          <Card className="grayGradient h-100">
             <p style={{ fontSize: "20px" }}>Incomes</p>
             <p style={{ fontSize: "35px", fontWeight: 800 }}>
               Rs. {sumOfIncomes.toLocaleString()}
@@ -133,6 +133,7 @@ function Core() {
         <div className="card card5">
           <Card className="grayGradient h-100">
             <h1>Daily tips</h1>
+            <p>Take advantage of budgeting resources.</p>
           </Card>
         </div>
         <div className="card card6">

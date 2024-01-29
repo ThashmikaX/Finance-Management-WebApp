@@ -1,4 +1,4 @@
-.dialog-form{
+.dialog-form {
     background: #ffffff;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@
     font-size: 20px;
 }
 
-.button{
+.button {
     background: #ffffff;
     border-radius: 10px;
     border-style: none;
@@ -20,27 +20,27 @@
     color: #ffffff;
 }
 
-.submit{
+.submit {
     background: linear-gradient(160deg, #166034 0%, #00FF66 100%) padding-box,
-            linear-gradient(160deg, #a3a3a3 0%, #636363 100%) border-box;
-        border-radius: 25px;
-        border: 1px solid transparent;
-        padding: 10px 40px;
-        text-align: left;
-        box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.37);
+        linear-gradient(160deg, #a3a3a3 0%, #636363 100%) border-box;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    padding: 10px 40px;
+    text-align: left;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.37);
 }
 
-.cancel{
+.cancel {
     background: linear-gradient(160deg, #323232 0%, #1a1a1a 100%) padding-box,
-            linear-gradient(160deg, #a3a3a3 0%, #636363 100%) border-box;
-        border-radius: 25px;
-        border: 1px solid transparent;
-        padding: 10px 40px;
-        text-align: left;
-        box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.37);
+        linear-gradient(160deg, #a3a3a3 0%, #636363 100%) border-box;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    padding: 10px 40px;
+    text-align: left;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.37);
 }
 
-.text-input{
+.text-input {
     background: #ffffff;
     border-radius: 10px;
     border-style: none;
@@ -50,21 +50,21 @@
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.37);
 }
 
-.text-input:focus{
+.text-input:focus {
     outline: none;
 }
 
-.text-input::placeholder{
+.text-input::placeholder {
     color: #a3a3a3;
 }
 
-.text-input:invalid{
+.text-input:invalid {
     border: 1px solid #ff0000;
 }
 
 
 
-.select-input{
+.select-input {
     background: #ffffff;
     border-radius: 10px;
     border-style: none;
@@ -74,15 +74,15 @@
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.37);
 }
 
-.select-input:focus{
+.select-input:focus {
     outline: none;
 }
 
-.select-input::placeholder{
+.select-input::placeholder {
     color: #a3a3a3;
 }
 
-.select-input:invalid{
+.select-input:invalid {
     border: 1px solid #ff0000;
 }
 
@@ -90,4 +90,3 @@
 
 
 /* Path: client/src/Components/PopupForm.js */
-

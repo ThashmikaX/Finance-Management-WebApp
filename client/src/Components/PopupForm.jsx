@@ -49,7 +49,7 @@ function PopupForm({ onSubmit, isOpen, onClose }) {
   };
 
   return (
-    <dialog ref={dialogRef} data-modal className="dialog-form grayGradient">
+    <dialog ref={dialogRef} data-modal className="dialog-form">
       <h2>Add Transaction</h2>
       <label>
         <p>Transaction:</p>
