@@ -34,6 +34,7 @@
     margin: 0px;
     background: linear-gradient(45deg, #CDCDCD, #FFFFFF, #CDCDCD);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-left: 120px;
 }
@@ -145,6 +146,7 @@
     margin: 0px;
     background: linear-gradient(45deg, #cdcdcdbb, #cdcdcdbb, #cdcdcdbb);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
