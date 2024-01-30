@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './Navbar.css';
+import React, { useState } from "react";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -20,20 +20,43 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`nav ${isSearchOpen ? 'openSearch' : ''} ${isNavOpen ? 'openNav' : ''}`}>
+    <nav
+      className={`nav ${isSearchOpen ? "openSearch" : ""} ${
+        isNavOpen ? "openNav" : ""
+      }`}
+    >
       <i className="uil uil-bars navOpenBtn" onClick={handleNavOpenClick}></i>
-      <a href="/#" className="logo">Finance Tracker</a>
+      <a href="/#" className="logo">
+        Finance Tracker
+      </a>
 
       <ul className="nav-links">
-        <i className="uil uil-times navCloseBtn" onClick={handleNavCloseClick}></i>
-        <li><a href="/#">Home</a></li>
-        <li><a href="/core">Dashboard</a></li>
-        <li><a href="#">Our Trusters</a></li>
-        <li><a href="/aboutus">About Us</a></li>
+        <i
+          className="uil uil-times navCloseBtn"
+          onClick={handleNavCloseClick}
+        ></i>
+        <li>
+          <a href="/#">Home</a>
+        </li>
+        <li>
+          <a href="/core">Dashboard</a>
+        </li>
+        <li>
+          <a href="#">Our Trusters</a>
+        </li>
+        <li>
+          <a href="/aboutus">About Us</a>
+        </li>
       </ul>
 
-      <i className={`uil uil-search search-icon ${isSearchOpen ? 'openSearch' : ''}`} id="searchIcon" onClick={handleSearchClick}></i>
-      <div className={`search-box ${isSearchOpen ? 'openSearch' : ''}`}>
+      <i
+        className={`uil uil-search search-icon ${
+          isSearchOpen ? "openSearch" : ""
+        }`}
+        id="searchIcon"
+        onClick={handleSearchClick}
+      ></i>
+      <div className={`search-box ${isSearchOpen ? "openSearch" : ""}`}>
         <i className="uil uil-search search-icon"></i>
         <input type="text" placeholder="Search here..." />
       </div>

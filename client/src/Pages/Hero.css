@@ -1,11 +1,11 @@
-.full{
+.full {
     height: 100vh;
     width: 100vw;
     background-color: rgb(0, 0, 0);
     position: relative;
 }
 
-.title{
+.title {
     font-size: 100px;
     color: rgb(255, 255, 255);
     margin: 0px;
@@ -15,19 +15,19 @@
     z-index: 2;
 }
 
-.green-gradient{
+.green-gradient {
     background: linear-gradient(160deg, #166034, #00FF66, rgb(255, 255, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.silver-gradient{
+.silver-gradient {
     background: linear-gradient(45deg, #CDCDCD, #FFFFFF, #CDCDCD);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.Hero{
+.Hero {
     background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: raw;
@@ -35,13 +35,14 @@
     justify-content: center;
     gap: 50px;
     margin-top: -20vh;
-    .description{
+
+    .description {
         font-size: 15px;
         color: rgb(255, 255, 255);
         width: 15%;
     }
 
-    .goButton{
+    .goButton {
         background-color: rgb(255, 255, 255);
         border: none;
         border-radius: 50px;
@@ -51,28 +52,28 @@
         transition: 0.5s
     }
 
-    .logo{
+    .logo {
         width: 40%;
         height: auto;
         min-width: 300px;
     }
 }
 
-.goButton:hover{
+.goButton:hover {
     background: linear-gradient(160deg, #166034, #00FF66, rgb(255, 255, 255));
     color: rgb(0, 0, 0);
 }
 
-.bgImages{
+.bgImages {
     z-index: 0;
 
-    .green{
+    .green {
         width: 1000px;
         position: absolute;
         top: -100px;
     }
-    
-    .green2{
+
+    .green2 {
         width: 1000px;
         position: absolute;
         top: 100px;
@@ -81,39 +82,40 @@
     }
 }
 
-@media screen and (max-width: 768px){
-    .full{
+@media screen and (max-width: 768px) {
+    .full {
         height: 100vh;
         width: 100vw;
         background-color: rgb(0, 0, 0);
-        
+
     }
-    .Hero{
+
+    .Hero {
         flex-direction: column;
         gap: 0px;
         width: 100vw;
 
-        .description{
+        .description {
             width: 100%;
             text-align: center;
             margin: 20% 10px 0px 10px;
             padding: 0px 50px;
-            
+
         }
 
-        .logo{
+        .logo {
             width: 100%;
             height: auto;
             min-width: 200px;
         }
     }
 
-    .bgImages{
+    .bgImages {
         width: 100%;
         height: auto;
     }
 
-    .title{
+    .title {
         font-size: 50px;
         margin: 100px 0px 0px 0px;
         padding: 0px;

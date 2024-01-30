@@ -225,7 +225,7 @@ dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.wallet-card{
+.wallet-card {
   justify-content: left;
   align-items: left;
   display: flex;

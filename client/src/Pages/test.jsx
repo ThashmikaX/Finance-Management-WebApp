@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import './Core.css'; // Import the CSS file for styling
+import React, { useState } from "react";
+import "./Core.css"; // Import the CSS file for styling
 
 const FinanceTracker = () => {
   const [transactions, setTransactions] = useState([]);
-  const [transactionType, setTransactionType] = useState('income');
-  const [category, setCategory] = useState('');
-  const [amount, setAmount] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('');
+  const [transactionType, setTransactionType] = useState("income");
+  const [category, setCategory] = useState("");
+  const [amount, setAmount] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("");
   const [isAddPopupVisible, setAddPopupVisibility] = useState(false);
 
   const handleAddTransaction = () => {
@@ -19,8 +19,8 @@ const FinanceTracker = () => {
       };
 
       setTransactions([...transactions, newTransaction]);
-      setCategory('');
-      setAmount('');
+      setCategory("");
+      setAmount("");
       setAddPopupVisibility(false); // Close the pop-up after adding the transaction
     }
   };
@@ -76,17 +76,29 @@ const FinanceTracker = () => {
       <div>
         <h2>Income</h2>
         {transactions
-          .filter((t) => t.type === 'income' && (!selectedCategory || t.category === selectedCategory))
+          .filter(
+            (t) =>
+              t.type === "income" &&
+              (!selectedCategory || t.category === selectedCategory)
+          )
           .map((t) => (
-            <div key={t.id}>+ {t.amount} ({t.category})</div>
+            <div key={t.id}>
+              + {t.amount} ({t.category})
+            </div>
           ))}
       </div>
       <div>
         <h2>Expense</h2>
         {transactions
-          .filter((t) => t.type === 'expense' && (!selectedCategory || t.category === selectedCategory))
+          .filter(
+            (t) =>
+              t.type === "expense" &&
+              (!selectedCategory || t.category === selectedCategory)
+          )
           .map((t) => (
-            <div key={t.id}>- {t.amount} ({t.category})</div>
+            <div key={t.id}>
+              - {t.amount} ({t.category})
+            </div>
           ))}
       </div>
       <div>
@@ -95,27 +107,41 @@ const FinanceTracker = () => {
           Select Category:
           <select value={selectedCategory} onChange={handleCategoryChange}>
             <option value="">All Categories</option>
-            {[...new Set(transactions.map((t) => t.category))].map((category) => (
-              <option key={category} value={category}>
-                {category}
-              </option>
-            ))}
+            {[...new Set(transactions.map((t) => t.category))].map(
+              (category) => (
+                <option key={category} value={category}>
+                  {category}
+                </option>
+              )
+            )}
           </select>
         </label>
         <div>
           <h3>Income by Category</h3>
           {transactions
-            .filter((t) => t.type === 'income' && (!selectedCategory || t.category === selectedCategory))
+            .filter(
+              (t) =>
+                t.type === "income" &&
+                (!selectedCategory || t.category === selectedCategory)
+            )
             .map((t) => (
-              <div key={t.id}>+ {t.amount} ({t.category})</div>
+              <div key={t.id}>
+                + {t.amount} ({t.category})
+              </div>
             ))}
         </div>
         <div>
           <h3>Expense by Category</h3>
           {transactions
-            .filter((t) => t.type === 'expense' && (!selectedCategory || t.category === selectedCategory))
+            .filter(
+              (t) =>
+                t.type === "expense" &&
+                (!selectedCategory || t.category === selectedCategory)
+            )
             .map((t) => (
-              <div key={t.id}>- {t.amount} ({t.category})</div>
+              <div key={t.id}>
+                - {t.amount} ({t.category})
+              </div>
             ))}
         </div>
       </div>

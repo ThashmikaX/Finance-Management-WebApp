@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Axios from "axios";
 import "./Core.css";
-import Card from "../Components/card";
+import Card from "../Components/Card";
 import PopupForm from "../Components/PopupForm";
 
 function Core() {
@@ -84,7 +84,10 @@ function Core() {
       <div className="div-grid">
         <div className="card card1">
           <Card className="greenGradient h-100 wallet-card">
-            <p style={{ fontSize: "60px", fontWeight: 600 }} className="wallet-card">
+            <p
+              style={{ fontSize: "60px", fontWeight: 600 }}
+              className="wallet-card"
+            >
               <span style={{ fontWeight: 200 }}>Wallet</span> Rs.{" "}
               {total.toLocaleString()}
             </p>
