@@ -1,4 +1,4 @@
-.greenGradient {
+/* .greenGradient {
     background: linear-gradient(160deg, #166034 0%, #00FF66 100%) padding-box,
         linear-gradient(160deg, #a3a3a3 0%, #636363 100%) border-box;
     border-radius: 25px;
@@ -6,14 +6,51 @@
     padding: 10px 40px;
     text-align: left;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.37);
-}
+} */
 
-.grayGradient {
-    background: linear-gradient(160deg, #323232 0%, #1a1a1a 100%) padding-box,
-        linear-gradient(160deg, #a3a3a3 0%, #636363 100%) border-box;
+
+.greenGradient {
+    background: linear-gradient(160deg, #166034c1 0%, #00ff66c7 100%) padding-box,
+        linear-gradient(160deg, #a3a3a300 0%, #63636300 100%) border-box;
     border-radius: 25px;
     border: 1px solid transparent;
     padding: 10px 40px;
     text-align: left;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10px);
+}
+
+.greenGradientButton {
+    background: linear-gradient(160deg, #166034c1 0%, #00ff66c7 100%) padding-box,
+        linear-gradient(160deg, #a3a3a300 0%, #63636300 100%) border-box;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    padding: 10px 40px;
+    text-align: center;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    height: 100%;
+}
+
+.greenGradientButton:hover {
+    background: linear-gradient(160deg, #166034c1 -50%, #00ff66c7 50%) padding-box,
+        linear-gradient(160deg, #a3a3a300 0%, #63636300 100%) border-box;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.grayGradient {
+    background: linear-gradient(160deg, #32323296 0%, #1a1a1ac9 100%) padding-box,
+        linear-gradient(160deg, #a3a3a300 0%, #63636300 100%) border-box;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    padding: 10px 40px;
+    text-align: left;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10px);
 }

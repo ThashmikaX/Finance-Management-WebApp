@@ -106,7 +106,7 @@ function Core() {
               Rs. {sumOfIncomes.toLocaleString()}
             </p>
           </Card>
-          <button onClick={() => setIsPopupOpen(true)} className="add-button">
+          <button onClick={() => setIsPopupOpen(true)} className="greenGradientButton">
             Add Transaction
           </button>
         </div>
@@ -140,12 +140,12 @@ function Core() {
           </Card>
         </div>
         <div className="card card6">
-          <button onClick={toggleAddPopup} className="add-button">
+          <button onClick={toggleAddPopup} className="greenGradientButton">
             View All Spending
           </button>
         </div>
         <div className="card card7">
-          <button onClick={toggleAddPopup} className="add-button">
+          <button onClick={toggleAddPopup} className="greenGradientButton">
             View All Incomes
           </button>
         </div>

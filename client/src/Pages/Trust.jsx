@@ -18,27 +18,14 @@ const Trust = () => {
 
 We appreciate your time and insights!</text>
 
-            {/* 
-             <div className="tDiv1_Down">
-                <text className="textDis">Lorem ipsum dolor sit amet consectetur. Congue vulputate mauris ut turpis tortor. Est sed posuere facilisi ullamcorper sit risus neque tortor vestibulum. Vel magna orci in nisl. Malesuada nisl placerat tincidunt arcu. Tortor risus quisq</text>
-             </div>*/}
            </div>
-
-           {/*Div 2 down side */}
-
            <div className="tDiv2">
-            
-              <div className="tBox1">
-                
+              <div className="card">     
                 <Card className="grayGradient trust_grayGradient">
-
                     <div className="tBox1_up">
-
-                    <img src={boy1} alt="SLSAC" className='t_logo'/>
-                    <text className="t_Name">William Thompson</text>
-
+                        <img src={boy1} alt="SLSAC" className='t_logo'/>
+                        <text className="t_Name">William Thompson</text>
                     </div>
-
                     <div className="tBox1_Down">
                         <text className="box_Dis">Before using this app, my finances were a complete mess! Now, I can easily track income and expenses, set realistic budgets, and see exactly where my money goes. I love the visual charts and reports, they make understanding my spending habits so much easier.</text>
                     </div>
@@ -46,7 +33,7 @@ We appreciate your time and insights!</text>
                 </Card>
               </div>
 
-               <div className="tBox2">
+               <div className="card">
                <Card className="grayGradient trust_grayGradient">
                     <div className="tBox1_up">
 
@@ -63,7 +50,7 @@ We appreciate your time and insights!</text>
                 </Card>
               </div>
 
-              <div className="tBox3">
+              <div className="card">
                     <Card className="grayGradient trust_grayGradient">
                                             <div className="tBox1_up">
 

@@ -1,7 +1,5 @@
 import React from "react";
 import "./Hero.css";
-import card from "../assets/3d.png";
-import Green from "../assets/Green.png";
 import { useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import CreditCard from "../Components/CreditCard";
