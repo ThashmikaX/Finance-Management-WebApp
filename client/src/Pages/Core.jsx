@@ -126,9 +126,15 @@ function Core() {
             <h2>Expense List</h2>
             {expenses.map((expense, index) => (
               <div key={index} className="expense-list-elem">
-                <p>{expense.Transaction}</p>
-                <p>{expense.Catagory}</p>
-                <p className="amount">Rs. {expense.Amount.toLocaleString()}</p>
+                <div className="expense-list-elem1">
+                  <p>{expense.Transaction}</p>
+                </div>
+                <div className="expense-list-elem1">
+                  <p>{expense.Catagory}</p>
+                </div>
+                <div className="expense-list-elem2">
+                  <p className="amount">Rs. {expense.Amount.toLocaleString()}</p>
+                </div>
               </div>
             ))}
           </Card>

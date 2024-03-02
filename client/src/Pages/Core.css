@@ -79,8 +79,8 @@
 
 .expense-list-elem {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   gap: 10px;
   padding: 10px;
   transition: 0.5s;
@@ -88,20 +88,40 @@
   border-radius: 10px;
   border: 1px solid transparent;
   padding: 10px 40px;
-  text-align: left;
 
   .amount {
     color: #00ff66;
   }
 
   &:hover {
-    background: linear-gradient(160deg, #166034 0%, #00ff66 100%) padding-box,
-      linear-gradient(160deg, #a3a3a3 0%, #636363 100%) border-box;
+    background: linear-gradient(160deg, #166034c1 -50%, #00ff66c7 50%) padding-box,
+      linear-gradient(160deg, #a3a3a300 0%, #63636300 100%) border-box;
     color: rgb(255, 255, 255);
 
     .amount {
       color: #ffffff;
     }
+  }
+}
+
+.expense-list-elem1 {
+  width: 80%;
+  border: #000000;
+  background-color: #00000000;
+}
+
+.expense-list-elem2 {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: right;
+  gap: 10px;
+  margin-left: auto;
+
+  .amount {
+    color: #00ff66;
+    margin-left: auto;
   }
 }
 
