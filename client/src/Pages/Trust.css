@@ -181,3 +181,15 @@
         padding-right: 10px;
     }
 }
+
+.green-gradient {
+    background: linear-gradient(160deg, #166034, #00FF66, rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.silver-gradient {
+    background: linear-gradient(45deg, #CDCDCD, #FFFFFF, #CDCDCD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

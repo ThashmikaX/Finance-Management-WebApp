@@ -11,7 +11,10 @@ const AboutUs = () => {
     <div className="aboutCon1">
       <div className="aboutDiv1">
         <h1 className="here_1">So,</h1>
-        <h1 className="here_1">Here We're</h1>
+        <h1 className="here_1">
+          <span className="silver-gradient">Here </span>
+          <span className="green-gradient">We're</span>
+        </h1>
 
         <p className="DescriptionAbout_1">
           We are Computer Engineering undergraduates at the faculty of engineering at the University of Ruhuna and currentl we study in second year.

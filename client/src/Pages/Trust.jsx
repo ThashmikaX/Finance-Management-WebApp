@@ -13,7 +13,10 @@ const Trust = () => {
             {/*Div 1 up side */}
 
             <div className="tDiv1">
-            <h1 className="topic1">Trust is Everything</h1>
+                <h1 className="topic1">
+                    <span className='silver-gradient'>Trust is </span>
+                    <span className='green-gradient'>Everything</span>
+                </h1>
             <text className="textDis">We're always looking for ways to improve our finance tracking app and your feedback is invaluable. Share your honest review below to help others make informed decisions and inspire them on their financial journey.
 
 We appreciate your time and insights!</text>
