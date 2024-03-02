@@ -19,7 +19,7 @@ const Trust = () => {
 We appreciate your time and insights!</text>
 
            </div>
-           <div className="tDiv2">
+           <div className="content-div">
               <div className="card">     
                 <Card className="grayGradient trust_grayGradient">
                     <div className="tBox1_up">
@@ -29,7 +29,6 @@ We appreciate your time and insights!</text>
                     <div className="tBox1_Down">
                         <text className="box_Dis">Before using this app, my finances were a complete mess! Now, I can easily track income and expenses, set realistic budgets, and see exactly where my money goes. I love the visual charts and reports, they make understanding my spending habits so much easier.</text>
                     </div>
-
                 </Card>
               </div>
 
@@ -53,23 +52,15 @@ We appreciate your time and insights!</text>
               <div className="card">
                     <Card className="grayGradient trust_grayGradient">
                                             <div className="tBox1_up">
-
                     <img src={boy2} alt="SLSAC" className='t_logo'/>
                     <text className="t_Name">Daniel Lee</text>
-
                     </div>
-
                     <div className="tBox1_Down">
                         <text className="box_Dis">I was hesitant to try another finance app after being disappointed with several in the past. However, I'm glad I gave this one a chance! The interface is clean and intuitive, making it easy to add transactions and view reports.</text>
                     </div>
-
-                    
-                    
                      </Card>
               </div>
-
            </div>
-
         </div>
     )
   }

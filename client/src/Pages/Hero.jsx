@@ -15,11 +15,9 @@ const Hero = () => {
         </h1>
         <div className="Hero">
           <p className="description silver-gradient">
-            Lorem ipsum dolor sit amet consectetur. Congue vulputate mauris ut
-            turpis tortor. Est sed posuere facilisi ullamcorper sit risus neque
-            tortor vestibulum. Vel magna orci in nisl. Malesuada nisl placerat
-            tincidunt arcu. Tortor risus quisque proin amet integer. Eu id eget
-            dictumst purus arcu. Senectus neque{" "}
+          Feeling overwhelmed by your finances? You're not alone. Juggling bills, tracking expenses, and planning for the future can feel like an insurmountable task. But managing your money doesn't have to be a chore that leaves you stressed and confused.
+
+This app is your trusted companion, designed to be more than just a financial tool.{" "}
           </p>
           <CreditCard />
           {/* <img src={card} alt="SLSAC" className="logo" /> */}

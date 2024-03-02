@@ -80,7 +80,6 @@ function PopupForm({ onSubmit, isOpen, onClose }) {
         <select
           className="select-input"
           value={category}
-          defaultValue="Food"
           onChange={(e) => {
             setCategory(e.target.value);
           }}

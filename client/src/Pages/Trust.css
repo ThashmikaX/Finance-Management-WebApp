@@ -21,6 +21,7 @@
     color: rgb(255, 255, 255);
     background: linear-gradient(45deg, #CDCDCD, #FFFFFF, #CDCDCD);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     display: flex;
     text-align: center;
@@ -30,9 +31,7 @@
 
 }
 
-/* Div2 *******************************/
-
-.tDiv2 {
+.content-div {
     display: flex;
     justify-content: center;
     gap: 5%;
@@ -75,8 +74,10 @@
 
 
 .tBox1_up {
-    height: 60px;
-
+    display: flex;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .tBox1_Down {
@@ -86,5 +87,97 @@
     padding-top: 15px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 25px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .tMainDiv {
+        background-color: rgb(0, 0, 0);
+    }
+
+    .tDiv1 {
+
+        height: 250px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .topic1 {
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .textDis {
+        color: rgb(255, 255, 255);
+        background: linear-gradient(45deg, #CDCDCD, #FFFFFF, #CDCDCD);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: flex;
+        text-align: center;
+        padding-top: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+
+    }
+
+    .content-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card {
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        background: none;
+        border: none;
+
+    }
+
+    .trust_grayGradient {
+        width: 60%;
+    }
+
+    .t_logo {
+        width: 60px;
+        height: auto;
+    }
+
+    .t_Name {
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        padding-left: 20px;
+        font-weight: 700;
+    }
+
+    .box_Dis {
+        font-size: 14px;
+        color: rgb(255, 255, 255);
+        background: linear-gradient(45deg, #cdcdcdbb, #cdcdcdbb, #cdcdcdbb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+    .tBox1_up {
+        display: flex;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .tBox1_Down {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
