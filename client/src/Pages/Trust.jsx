@@ -1,6 +1,6 @@
 import React from 'react'
 import './Trust.css'
-import Card from "../Components/card";
+import Card from "../Components/Card";
 import girl1 from '../Assets/girl-1.png'
 import boy1 from '../Assets/boy-1.png'
 import boy2 from '../Assets/boy-2.png'
