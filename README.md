@@ -29,3 +29,16 @@
 
    ```bash
    git clone [https://github.com/ThashmikaX/Finance-Tracker-web]
+   
+2. **Install dependencies:**
+
+   ```bash
+   cd MERN-Expense-Tracker
+   npm install
+
+3. **Run the development server:**
+
+   ```bash
+   npm start
+
+
