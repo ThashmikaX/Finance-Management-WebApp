@@ -28,4 +28,4 @@
 1. **Clone the repository:**
 
    ```bash
-   git clone [invalid URL removed]
+   git clone [https://github.com/ThashmikaX/Finance-Tracker-web]
