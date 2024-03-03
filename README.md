@@ -33,7 +33,7 @@
 2. **Install dependencies:**
 
    ```bash
-   cd MERN-Expense-Tracker
+   cd Finance-Tracker-web
    npm install
 
 3. **Run the development server:**
