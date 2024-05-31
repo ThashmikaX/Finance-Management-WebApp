@@ -2,13 +2,17 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const UserModel = require('./models/Users');
+const dotenv = require('dotenv')
+dotenv.config();
 
 const cors = require('cors');
 
 app.use(express.json()); // for parsing application/json
 app.use(cors());
 
-mongoose.connect("mongodb+srv://thashmikax:4uJX8YX6mTGStgjU@cluster0.o2oihzs.mongodb.net/finance-tracker?retryWrites=true&w=majority",
+const url = process.env.URL;
+
+mongoose.connect(url,
   {
   }).then(() => { console.log('Database connected..') }).catch((err) => console.log(err));
 
