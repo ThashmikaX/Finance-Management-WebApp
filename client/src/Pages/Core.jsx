@@ -15,7 +15,7 @@ function Core() {
     console.log("transactionType " + transactionType);
     console.log("category " + category);
     console.log("amount " + amount);
-    Axios.post("http://localhost:3001/createUser", {
+    Axios.post("https://finance-management-web-app-backend-4hya74nvw.vercel.app/createUser", {
       Transaction: transaction,
       TransactionType: transactionType,
       Catagory: category,
@@ -23,7 +23,7 @@ function Core() {
     })
       .then((response) => {
         // After the transaction is added, re-fetch the transactions
-        Axios.get("http://localhost:3001/getUsers").then((response) => {
+        Axios.get("https://finance-management-web-app-backend-4hya74nvw.vercel.app/getUsers").then((response) => {
           setTransactions(response.data);
         });
         setAddPopupVisibility(false);
@@ -35,7 +35,7 @@ function Core() {
   const [transactions, setTransactions] = useState([]);
 
   useEffect(() => {
-    Axios.get("http://localhost:3001/getUsers").then((response) => {
+    Axios.get("https://finance-management-web-app-backend-4hya74nvw.vercel.app/getUsers").then((response) => {
       setTransactions(response.data);
     });
   }, []);
