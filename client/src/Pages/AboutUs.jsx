@@ -3,7 +3,7 @@ import "./AboutUs.css";
 import Card from "../Components/Card";
 import card1 from "../assets/Facebook.png";
 import sudesh from "../assets/Sudesh.png";
-import dilukshan from "../Assets/Dilukshan.png"
+import dilukshan from "../assets/Dilukshan.png"
 import card3 from "../assets/Behance.png";
 
 const AboutUs = () => {

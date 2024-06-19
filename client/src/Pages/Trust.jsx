@@ -1,9 +1,9 @@
 import React from 'react'
 import './Trust.css'
 import Card from "../Components/Card";
-import girl1 from '../Assets/girl-1.png'
-import boy1 from '../Assets/boy-1.png'
-import boy2 from '../Assets/boy-2.png'
+import girl1 from '../assets/girl-1.png'
+import boy1 from '../assets/boy-1.png'
+import boy2 from '../assets/boy-2.png'
 
 
 const Trust = () => {
