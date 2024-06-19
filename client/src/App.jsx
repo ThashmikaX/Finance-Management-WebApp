@@ -3,7 +3,7 @@ import { Navbar } from "./Components";
 import { Hero, Core, AboutUs, Trust } from "./Pages";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import bgElement from "./Assets/Green.png";
+import bgElement from "./assets/Green.png";
 
 const App = () => {
   return (
